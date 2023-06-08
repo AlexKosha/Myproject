@@ -91,16 +91,67 @@ a {
   background-color: var(--color-primary-color);
   padding-top: 82px;
 }
+
+.container-hero {
+  position: relative;
+}
+
 .hero-title {
   font-size: 220px;
   line-height: 0.9;
+  margin-bottom: 62px;
 }
 .hero-title-part {
   color: var(--color-secondary-color);
 }
 .hero-link {
+  color: var(--color-secondary-color);
+  font-size: 26px;
+  line-height: 1.19;
+  text-transform: uppercase;
 }
 .hero-text {
+  position: absolute;
+  right: 280px;
+  bottom: 0px;
+  width: 350px;
+  height: 84px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--color-white);
 }
+
+.hero-text-since {
+  position: absolute;
+  right: 381px;
+  top: 30px;
+  background-image: url(../images/star.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 249px;
+  height: 70px;
+  font-size: 22px;
+  line-height: 1.18;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid var(--color-white);
+  display: flex;
+  align-items: center;
+  border-radius: 99px;
+  padding-left: 88px;
+}
+
 .hero-btn {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-image: url(../images/angol.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid var(--color-white);
+  border-radius: 99px;
+  width: 70px;
+  height: 70px;
+  background-color: inherit;
+  cursor: pointer;
 }
