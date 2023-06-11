@@ -1,5 +1,6 @@
 :root {
   --color-secondary-color: #fcd043;
+  --color-hover: #fcc000;
   --color-primary-color: #313f38;
   --color-white: #fffcf6;
   --color-text: #000000;
@@ -48,7 +49,7 @@ a {
 }
 
 .container {
-  width: 1810px;
+  max-width: 1810px;
   margin: auto;
   padding: 0 15px;
 }
@@ -113,9 +114,11 @@ a {
   line-height: 0.9;
   margin-bottom: 62px;
 }
+
 .hero-title-part {
   color: var(--color-secondary-color);
 }
+
 .hero-link {
   color: var(--color-secondary-color);
   font-size: 26px;
@@ -123,6 +126,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 52px;
 }
+
 .hero-text {
   position: absolute;
   right: 280px;
@@ -195,6 +199,12 @@ a {
   color: var(--color-text);
   border: none;
   cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.room-btn:hover,
+.room-btn:focus {
+  background-color: var(--color-hover);
 }
 
 .room-scroll-btn-up {
@@ -241,9 +251,6 @@ a {
   display: flex;
 }
 
-.container-info {
-}
-
 .hero-address-link {
   display: block;
   font-size: 26px;
@@ -264,9 +271,74 @@ a {
 
 .hero-address-text {
   margin-left: auto;
-  width: 251px;
+  max-width: 251px;
   font-size: 26px;
   line-height: 1.19;
   text-align: right;
   text-transform: uppercase;
+}
+
+/* -------------------section2--------------------- */
+
+.about {
+  background-color: var(--color-primary-color);
+  padding-top: 200px;
+  padding-bottom: 300px;
+  background-image: url(../images/ellipse.svg), url(../images/horizontal.svg),
+    url(../images/vertical.svg);
+  background-repeat: no-repeat;
+  background-position: 0 120px, right 120px, 76.7% 120px;
+}
+
+.container-about {
+  position: relative;
+}
+
+.container-text {
+  position: absolute;
+  right: 660px;
+  bottom: 0;
+}
+
+.about-title {
+  position: absolute;
+  top: 300px;
+  right: 617px;
+  font-size: 150px;
+  line-height: 0.8;
+  text-align: right;
+  text-transform: uppercase;
+  width: 486px;
+  height: 260px;
+}
+
+.title-part {
+  color: var(--color-secondary-color);
+}
+
+.second-title {
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  margin-bottom: 41px;
+}
+
+.about-text {
+  width: 443px;
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.about-img {
+  width: 606px;
+  height: 850px;
+}
+
+.about-img-decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 314px;
+  height: 414px;
 }
